@@ -1,0 +1,73 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "header_text": "hola soy la mejor del mundo",
+        "header_number_1": 12,
+        "header_number_1_desc": "contenido header_number_1_desc",
+        "header_number_2": 40,
+        "header_number_2_desc": "contenido  header_number_2_desc",
+        "email": "contenido@mail.com",
+        "createdAt": "2022-03-06T18:54:07.504Z",
+        "updatedAt": "2022-03-06T21:19:17.837Z",
+        "publishedAt": "2022-03-06T19:50:03.457Z",
+        "header_text_options": " contenido, de , alta calidad",
+        "header_picture": {},
+        "caracteristicas": {
+          "id": 1,
+          "title": "caracteristicas_title",
+          "caption": "caracteristicas_caption",
+          "body_title_1": "bla bla bla **buuu**\n\n_yess_",
+          "body_caption_1": "body_caption_1",
+          "body_title_2": " body_caption_1 body_title_2",
+          "body_cap_2": "body_cap_2",
+          "body_title_3": "body_title_3",
+          "body_cap_3": "body_cap_3",
+          "body_title_4": "body_title_4",
+          "body_cap_4": "body_cap_4"
+        },
+        "portafolio": {
+          "id": 1,
+          "title": "Nuestros exitosos productos digitales & y proyectos anteriores.",
+          "caption": "PORTAFOLIO",
+          "options": "Todas=*,branding=brand,App Mobiles=web,Creativo=graphic"
+        },
+        "karen_portafolios": {
+          "data": [
+            {
+              "id": 3,
+              "attributes": {
+                "title": "portf3",
+                "caption": "captr3",
+                "createdAt": "2022-03-06T21:15:15.495Z",
+                "updatedAt": "2022-03-06T21:23:11.590Z",
+                "publishedAt": "2022-03-06T21:17:28.002Z",
+                "key": "web"
+              }
+            },
+            {
+              "id": 2,
+              "attributes": {
+                "title": "title2",
+                "caption": "caption2",
+                "createdAt": "2022-03-06T20:52:29.828Z",
+                "updatedAt": "2022-03-06T21:23:31.132Z",
+                "publishedAt": "2022-03-06T20:52:32.838Z",
+                "key": "graphic"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
+  }
+}

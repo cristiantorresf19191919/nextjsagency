@@ -9,11 +9,19 @@ import AboutUs5 from "../../components/About-us5/about-us5";
 import FullTestimonials from "../../components/Full-testimonials/full-testimonials";
 import Blogs2 from "../../components/blogs/Blogs2/blogs2";
 import SContactForm from "../../components/s-contact-form/s-contact-form";
+import axios from "axios";
 
-const Homepage = () => {
+const Homepage = (props) => {
+  // console.log("🚀 ~ file: home7-dark.jsx ~ line 15 ~ Homepage ~ props", props)
+  const { header_picture } = props.data;
+  const api = props.api;
+  const headerData = { ...props.data };
+  const image = api + header_picture?.data?.attributes?.url;
+  const caracteristicas = props.caracteristicas;
+  const portafolio = props.portafolio;
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
-
+  console.log(process.env.API);
   React.useEffect(() => {
     var navbar = navbarRef.current;
     if (window.pageYOffset > 300) {
@@ -32,9 +40,9 @@ const Homepage = () => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <FreelancreIntro />
-      <Services5  />
-      <WorksStyle4 />
+      <FreelancreIntro headerData={headerData} image={image} />
+      <Services5 caracteristicas={caracteristicas} />
+      <WorksStyle4 portafolio={portafolio} api={api} />
       <AboutUs5 />
       <FullTestimonials showHead />
       <Blogs2 />
@@ -45,3 +53,26 @@ const Homepage = () => {
 };
 
 export default Homepage;
+
+export async function getServerSideProps() {
+  const url = process.env.API;
+  //http://localhost:1337/api/karens
+  const { data: { data } } = await axios.get(`${url}/api/karens?populate=*`);
+  const portfolio = await axios.get(`${url}/api/karen-portafolios?populate=*`);
+  const itemListIds =  data[0]?.attributes?.karen_portafolios?.data.map(o => o.id);
+  const itemList = portfolio.data.data.filter(o => itemListIds.includes(o.id));  
+
+
+  return {
+    props: {
+      data: data[0]?.attributes,
+      api: process.env.API,
+      caracteristicas: data[0]?.attributes?.caracteristicas,
+      portafolio: {
+        content: data[0]?.attributes?.portafolio,
+        itemList
+      }
+    }
+  }
+}
+

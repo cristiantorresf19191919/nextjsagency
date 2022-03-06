@@ -2,33 +2,33 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
-const FreelancreIntro = () => {
+const FreelancreIntro = ({ headerData, image }) => {
+  const { header_text, header_text_options, header_number_1, header_number_1_desc, header_number_2, header_number_2_desc, ...rest } = headerData;
+  const { email } = rest;
+  const strings = header_text_options.split(",");
   return (
     <header className="freelancre valign">
       <div className="container">
         <div className="row">
           <div className="col-lg-4">
             <div className="img">
-              <img src="/img/KAREEEEEEEEEEEEEEN.png" alt="" />
+              <img src={image} alt="" />
             </div>
           </div>
           <div className="col-lg-8 valign">
             <div className="cont">
               <h1 className="cd-headline clip">
-                Hola, mi nombre es karen y soy la novia de cristianScript, soy ux senior designer, desarrollo 
+                {header_text}
                 <span
-                  style={{ fontSize: "35px", lineHeight: "49px" }}
+                  style={{ marginLeft: ".5rem", lineHeight: "49px", overflowWrap: "break-word" }}
                   className="cd-words-wrapper"
                 >
                   <Typewriter
                     options={{
                       wrapperClassName: "color-font fw-600",
-                      strings: [
-                        "Aplicaciones Mobiles",
-                        "Landing Pages",
-                        "Diseños Espectaculares",
-                      ],
+                      strings,
                       autoStart: true,
+                      deleteSpeed: 10,
                       loop: true,
                     }}
                     loop={true}
@@ -47,22 +47,22 @@ const FreelancreIntro = () => {
             <ul className="flex">
               <li className="flex">
                 <div className="numb valign">
-                  <h3>12</h3>
+                  <h3>{header_number_1}</h3>
                 </div>
                 <div className="text valign">
                   <p>
-                    Años <br /> de experience
+                    {header_number_1_desc}
                   </p>
                 </div>
               </li>
 
               <li className="flex">
                 <div className="numb valign">
-                  <h3>165</h3>
+                  <h3>{header_number_2}</h3>
                 </div>
                 <div className="text valign">
                   <p>
-                    Proyectos Completados <br /> en 19 paises
+                    {header_number_2_desc}
                   </p>
                 </div>
               </li>
@@ -73,7 +73,7 @@ const FreelancreIntro = () => {
                     <div className="text valign">
                       <div className="full-width">
                         <p>Ponte en contacto conmigo</p>
-                        <h6>netgoucreativoux@gmail.com</h6>
+                        <h6>{email}</h6>
                       </div>
                     </div>
                     <div className="mail-icon">

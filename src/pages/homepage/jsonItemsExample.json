@@ -1,0 +1,259 @@
+{
+  "itemsList":  [
+        {
+            "id": 2,
+            "attributes": {
+                "title": "title2",
+                "caption": "caption2",
+                "createdAt": "2022-03-06T20:52:29.828Z",
+                "updatedAt": "2022-03-06T21:23:31.132Z",
+                "publishedAt": "2022-03-06T20:52:32.838Z",
+                "key": "graphic",
+                "picture": {
+                    "data": {
+                        "id": 3,
+                        "attributes": {
+                            "name": "264976390_1966834790148114_7512956057945795530_n.jpg",
+                            "alternativeText": "264976390_1966834790148114_7512956057945795530_n.jpg",
+                            "caption": "264976390_1966834790148114_7512956057945795530_n.jpg",
+                            "width": 632,
+                            "height": 843,
+                            "formats": {
+                                "thumbnail": {
+                                    "name": "thumbnail_264976390_1966834790148114_7512956057945795530_n.jpg",
+                                    "hash": "thumbnail_264976390_1966834790148114_7512956057945795530_n_10b5d5bcd0",
+                                    "ext": ".jpg",
+                                    "mime": "image/jpeg",
+                                    "width": 117,
+                                    "height": 156,
+                                    "size": 3.98,
+                                    "path": null,
+                                    "url": "/uploads/thumbnail_264976390_1966834790148114_7512956057945795530_n_10b5d5bcd0.jpg"
+                                },
+                                "medium": {
+                                    "name": "medium_264976390_1966834790148114_7512956057945795530_n.jpg",
+                                    "hash": "medium_264976390_1966834790148114_7512956057945795530_n_10b5d5bcd0",
+                                    "ext": ".jpg",
+                                    "mime": "image/jpeg",
+                                    "width": 562,
+                                    "height": 750,
+                                    "size": 43.54,
+                                    "path": null,
+                                    "url": "/uploads/medium_264976390_1966834790148114_7512956057945795530_n_10b5d5bcd0.jpg"
+                                },
+                                "small": {
+                                    "name": "small_264976390_1966834790148114_7512956057945795530_n.jpg",
+                                    "hash": "small_264976390_1966834790148114_7512956057945795530_n_10b5d5bcd0",
+                                    "ext": ".jpg",
+                                    "mime": "image/jpeg",
+                                    "width": 375,
+                                    "height": 500,
+                                    "size": 22.16,
+                                    "path": null,
+                                    "url": "/uploads/small_264976390_1966834790148114_7512956057945795530_n_10b5d5bcd0.jpg"
+                                }
+                            },
+                            "hash": "264976390_1966834790148114_7512956057945795530_n_10b5d5bcd0",
+                            "ext": ".jpg",
+                            "mime": "image/jpeg",
+                            "size": 52.42,
+                            "url": "/uploads/264976390_1966834790148114_7512956057945795530_n_10b5d5bcd0.jpg",
+                            "previewUrl": null,
+                            "provider": "local",
+                            "provider_metadata": null,
+                            "createdAt": "2022-03-06T20:09:30.475Z",
+                            "updatedAt": "2022-03-06T20:09:30.475Z"
+                        }
+                    }
+                },
+                "karen": {
+                    "data": {
+                        "id": 1,
+                        "attributes": {
+                            "header_text": "hola soy la mejor del mundo",
+                            "header_number_1": 12,
+                            "header_number_1_desc": "contenido header_number_1_desc",
+                            "header_number_2": 40,
+                            "header_number_2_desc": "contenido  header_number_2_desc",
+                            "email": "contenido@mail.com",
+                            "createdAt": "2022-03-06T18:54:07.504Z",
+                            "updatedAt": "2022-03-06T21:19:17.837Z",
+                            "publishedAt": "2022-03-06T19:50:03.457Z",
+                            "header_text_options": " contenido, de , alta calidad"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": 3,
+            "attributes": {
+                "title": "portf3",
+                "caption": "captr3",
+                "createdAt": "2022-03-06T21:15:15.495Z",
+                "updatedAt": "2022-03-06T21:23:11.590Z",
+                "publishedAt": "2022-03-06T21:17:28.002Z",
+                "key": "web",
+                "picture": {
+                    "data": {
+                        "id": 2,
+                        "attributes": {
+                            "name": "KAREEEEEEEEEEEEEEN.png",
+                            "alternativeText": "KAREEEEEEEEEEEEEEN.png",
+                            "caption": "KAREEEEEEEEEEEEEEN.png",
+                            "width": 778,
+                            "height": 924,
+                            "formats": {
+                                "thumbnail": {
+                                    "name": "thumbnail_KAREEEEEEEEEEEEEEN.png",
+                                    "hash": "thumbnail_KAREEEEEEEEEEEEEEN_fca7c24cc9",
+                                    "ext": ".png",
+                                    "mime": "image/png",
+                                    "width": 131,
+                                    "height": 156,
+                                    "size": 58.72,
+                                    "path": null,
+                                    "url": "/uploads/thumbnail_KAREEEEEEEEEEEEEEN_fca7c24cc9.png"
+                                },
+                                "medium": {
+                                    "name": "medium_KAREEEEEEEEEEEEEEN.png",
+                                    "hash": "medium_KAREEEEEEEEEEEEEEN_fca7c24cc9",
+                                    "ext": ".png",
+                                    "mime": "image/png",
+                                    "width": 631,
+                                    "height": 750,
+                                    "size": 1086.13,
+                                    "path": null,
+                                    "url": "/uploads/medium_KAREEEEEEEEEEEEEEN_fca7c24cc9.png"
+                                },
+                                "small": {
+                                    "name": "small_KAREEEEEEEEEEEEEEN.png",
+                                    "hash": "small_KAREEEEEEEEEEEEEEN_fca7c24cc9",
+                                    "ext": ".png",
+                                    "mime": "image/png",
+                                    "width": 421,
+                                    "height": 500,
+                                    "size": 511.72,
+                                    "path": null,
+                                    "url": "/uploads/small_KAREEEEEEEEEEEEEEN_fca7c24cc9.png"
+                                }
+                            },
+                            "hash": "KAREEEEEEEEEEEEEEN_fca7c24cc9",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "size": 1028,
+                            "url": "/uploads/KAREEEEEEEEEEEEEEN_fca7c24cc9.png",
+                            "previewUrl": null,
+                            "provider": "local",
+                            "provider_metadata": null,
+                            "createdAt": "2022-03-06T19:49:00.987Z",
+                            "updatedAt": "2022-03-06T19:49:00.987Z"
+                        }
+                    }
+                },
+                "karen": {
+                    "data": {
+                        "id": 1,
+                        "attributes": {
+                            "header_text": "hola soy la mejor del mundo",
+                            "header_number_1": 12,
+                            "header_number_1_desc": "contenido header_number_1_desc",
+                            "header_number_2": 40,
+                            "header_number_2_desc": "contenido  header_number_2_desc",
+                            "email": "contenido@mail.com",
+                            "createdAt": "2022-03-06T18:54:07.504Z",
+                            "updatedAt": "2022-03-06T21:19:17.837Z",
+                            "publishedAt": "2022-03-06T19:50:03.457Z",
+                            "header_text_options": " contenido, de , alta calidad"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": 4,
+            "attributes": {
+                "title": "portf6",
+                "caption": "portf6",
+                "createdAt": "2022-03-06T21:16:31.654Z",
+                "updatedAt": "2022-03-06T21:55:27.158Z",
+                "publishedAt": "2022-03-06T21:19:56.268Z",
+                "key": "web",
+                "picture": {
+                    "data": {
+                        "id": 4,
+                        "attributes": {
+                            "name": "yoga.png",
+                            "alternativeText": "yoga.png",
+                            "caption": "yoga.png",
+                            "width": 826,
+                            "height": 758,
+                            "formats": {
+                                "thumbnail": {
+                                    "name": "thumbnail_yoga.png",
+                                    "hash": "thumbnail_yoga_218decc780",
+                                    "ext": ".png",
+                                    "mime": "image/png",
+                                    "width": 170,
+                                    "height": 156,
+                                    "size": 42.47,
+                                    "path": null,
+                                    "url": "/uploads/thumbnail_yoga_218decc780.png"
+                                },
+                                "medium": {
+                                    "name": "medium_yoga.png",
+                                    "hash": "medium_yoga_218decc780",
+                                    "ext": ".png",
+                                    "mime": "image/png",
+                                    "width": 750,
+                                    "height": 688,
+                                    "size": 511.01,
+                                    "path": null,
+                                    "url": "/uploads/medium_yoga_218decc780.png"
+                                },
+                                "small": {
+                                    "name": "small_yoga.png",
+                                    "hash": "small_yoga_218decc780",
+                                    "ext": ".png",
+                                    "mime": "image/png",
+                                    "width": 500,
+                                    "height": 459,
+                                    "size": 267.6,
+                                    "path": null,
+                                    "url": "/uploads/small_yoga_218decc780.png"
+                                }
+                            },
+                            "hash": "yoga_218decc780",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "size": 433.07,
+                            "url": "/uploads/yoga_218decc780.png",
+                            "previewUrl": null,
+                            "provider": "local",
+                            "provider_metadata": null,
+                            "createdAt": "2022-03-06T21:16:23.062Z",
+                            "updatedAt": "2022-03-06T21:16:23.062Z"
+                        }
+                    }
+                },
+                "karen": {
+                    "data": {
+                        "id": 1,
+                        "attributes": {
+                            "header_text": "hola soy la mejor del mundo",
+                            "header_number_1": 12,
+                            "header_number_1_desc": "contenido header_number_1_desc",
+                            "header_number_2": 40,
+                            "header_number_2_desc": "contenido  header_number_2_desc",
+                            "email": "contenido@mail.com",
+                            "createdAt": "2022-03-06T18:54:07.504Z",
+                            "updatedAt": "2022-03-06T21:19:17.837Z",
+                            "publishedAt": "2022-03-06T19:50:03.457Z",
+                            "header_text_options": " contenido, de , alta calidad"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
