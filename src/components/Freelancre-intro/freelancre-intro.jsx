@@ -3,6 +3,13 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 
 const FreelancreIntro = ({ headerData, image }) => {
+  if (!headerData) return (
+    <>
+      <div className="freelancre valign">
+        <p>communication data error</p>
+      </div>
+    </>
+  )
   const { header_text, header_text_options, header_number_1, header_number_1_desc, header_number_2, header_number_2_desc, ...rest } = headerData;
   const { email } = rest;
   const strings = header_text_options.split(",");
