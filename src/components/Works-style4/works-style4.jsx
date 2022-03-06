@@ -46,7 +46,7 @@ const WorksStyle4 = ({ portafolio, api }) => {
           <div className="filtering col-12">
             <div className="filter wow fadeIn" data-wow-delay=".5s">
               {mapOptions(options)?.length > 0 && mapOptions(options).map(op => (
-                <span data-filter={op.key} className={op.key === '*' && 'active'}>
+                <span data-filter={op.key} key={op.key} className={op.key === '*' && 'active'}>
                   {op.label}
                 </span>
               ))}
