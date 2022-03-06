@@ -2,6 +2,11 @@ import React from "react";
 import featuresData from "../../data/sections/features.json";
 
 const Services5 = ({ caracteristicas }) => {
+  if (!caracteristicas) return (
+    <>
+      <h5>no se ha configurado caracteristicas</h5>
+    </>
+  )
   const { title, caption, body_title_1, body_caption_1, body_title_2, body_cap_2, body_title_3, body_cap_3, body_title_4, body_cap_4 } = caracteristicas;
   const featuresDataList = [
     {

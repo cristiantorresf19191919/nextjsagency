@@ -3,7 +3,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 
 const FreelancreIntro = ({ headerData, image }) => {
-  if (!headerData) return (
+  if (!headerData || !image) return (
     <>
       <div className="freelancre valign">
         <p>communication data error</p>
