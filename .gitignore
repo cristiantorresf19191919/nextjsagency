@@ -2,3 +2,4 @@ node_modules
 vie.rar
 .next
 *.log
+.next/

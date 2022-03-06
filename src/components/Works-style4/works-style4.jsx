@@ -4,13 +4,7 @@ import Link from "next/link";
 import initIsotope from "../../common/initIsotope";
 
 const WorksStyle4 = ({ portafolio, api }) => {
-  if (!portafolio || !api) return (
-    <>
-      <h5>no se ha configurado portafolio o api</h5>
-      <p>{api}</p>
-    </>
-  )
-  const { content, itemList } = portafolio;
+  const { content = false, itemList = [] } = portafolio;
   const { title, caption, options } = content;
   const mapOptions = (options) => {
     const object = Object.fromEntries(new Map(options.split(",").map(a => a.split("="))))
@@ -31,6 +25,12 @@ const WorksStyle4 = ({ portafolio, api }) => {
       initIsotope();
     }, 1000);
   }, []);
+  if (!portafolio || !api) return (
+    <>
+      <h5>no se ha configurado portafolio o api</h5>
+      <p>{api}</p>
+    </>
+  )
   return (
     <section className="portfolio-frl section-padding pb-70">
       <div className="container">
