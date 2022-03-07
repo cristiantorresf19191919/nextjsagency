@@ -13,7 +13,6 @@ import axios from "axios";
 import If from "../../components/Common/If";
 
 const Homepage = (props) => {
-  // console.log("🚀 ~ file: home7-dark.jsx ~ line 15 ~ Homepage ~ props", props)
   const { header_picture } = props.data;
   const api = props.api;
   const headerData = { ...props.data };
@@ -41,15 +40,9 @@ const Homepage = (props) => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <If Condition={headerData}>
-        <FreelancreIntro headerData={headerData} image={image} />
-      </If>
-      <If Condition={caracteristicas}>
-        <Services5 caracteristicas={caracteristicas} />
-      </If>
-      <If Condition={portafolio}>
-        <WorksStyle4 portafolio={portafolio} api={api} />
-      </If>
+      <FreelancreIntro headerData={headerData} image={image} />
+      <Services5 caracteristicas={caracteristicas} />
+      <WorksStyle4 portafolio={portafolio} api={api} />
       <AboutUs5 />
       <FullTestimonials showHead />
       <Blogs2 />
@@ -64,7 +57,7 @@ export default Homepage;
 export async function getServerSideProps() {
   const url = process.env.API;
   //http://localhost:1337/api/karens
-  const { data: { data } } = await axios.get(`${url}/api/karens?populate=*`);
+  const { data: { data } } = await axios.get(`${url}/api/karens?populate=*`);  
   const portfolio = await axios.get(`${url}/api/karen-portafolios?populate=*`);
   const itemListIds = data[0]?.attributes?.karen_portafolios?.data.map(o => o.id);
   const itemList = portfolio.data.data.filter(o => itemListIds.includes(o.id));
