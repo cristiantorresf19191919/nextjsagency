@@ -10,6 +10,7 @@ import FullTestimonials from "../../components/Full-testimonials/full-testimonia
 import Blogs2 from "../../components/blogs/Blogs2/blogs2";
 import SContactForm from "../../components/s-contact-form/s-contact-form";
 import axios from "axios";
+import If from "../../components/Common/If";
 
 const Homepage = (props) => {
   // console.log("🚀 ~ file: home7-dark.jsx ~ line 15 ~ Homepage ~ props", props)
@@ -40,9 +41,15 @@ const Homepage = (props) => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <FreelancreIntro headerData={headerData} image={image} />
-      <Services5 caracteristicas={caracteristicas} />
-      <WorksStyle4 portafolio={portafolio} api={api} />
+      <If Condition={headerData}>
+        <FreelancreIntro headerData={headerData} image={image} />
+      </If>
+      <If Condition={caracteristicas}>
+        <Services5 caracteristicas={caracteristicas} />
+      </If>
+      <If Condition={portafolio}>
+        <WorksStyle4 portafolio={portafolio} api={api} />
+      </If>
       <AboutUs5 />
       <FullTestimonials showHead />
       <Blogs2 />
@@ -59,8 +66,8 @@ export async function getServerSideProps() {
   //http://localhost:1337/api/karens
   const { data: { data } } = await axios.get(`${url}/api/karens?populate=*`);
   const portfolio = await axios.get(`${url}/api/karen-portafolios?populate=*`);
-  const itemListIds =  data[0]?.attributes?.karen_portafolios?.data.map(o => o.id);
-  const itemList = portfolio.data.data.filter(o => itemListIds.includes(o.id));  
+  const itemListIds = data[0]?.attributes?.karen_portafolios?.data.map(o => o.id);
+  const itemList = portfolio.data.data.filter(o => itemListIds.includes(o.id));
 
 
   return {
